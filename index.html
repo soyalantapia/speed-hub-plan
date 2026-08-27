@@ -701,6 +701,43 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 .f3-bd h3{font-family:"Saira Condensed";font-style:italic;font-weight:700;text-transform:uppercase;
   font-size:var(--t-lg);margin:0;line-height:1.05;color:var(--white)}
 .f3-bd p{font-size:var(--t-sm);color:var(--silver);font-weight:300;line-height:1.4;margin:0}
+
+/* === LOS MOCKUPS DE IA, DIBUJADOS === */
+.f3grid.c4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1100px){.f3grid.c4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.f3grid.c4{grid-template-columns:1fr}}
+.f3-shot.mock{background:#0d0f11;display:flex;padding:clamp(.4rem,1vh,.7rem)}
+.mk{flex:1;min-width:0;display:flex;flex-direction:column;background:#141719;border:1px solid var(--border-2);border-radius:2px;overflow:hidden}
+.mk-h{display:flex;justify-content:space-between;align-items:center;gap:.4rem;padding:.34rem .5rem;background:#0f1113;border-bottom:1px solid var(--border)}
+.mk-logo{font-family:"Saira Condensed";font-style:italic;font-weight:800;font-size:var(--micro);letter-spacing:.04em;color:var(--white);text-transform:uppercase}
+.mk-logo i{color:var(--orange);font-style:normal}
+.mk-tag{font-family:"JetBrains Mono";font-size:calc(var(--micro)*.92);color:var(--orange);letter-spacing:.06em}
+.mk-tag.rec{color:#e0503a}
+.mk-b{flex:1;min-height:0;display:flex;flex-direction:column;gap:.26rem;padding:.44rem .5rem;overflow:hidden}
+.mk-ask{background:var(--orange);color:var(--black);font-size:calc(var(--micro)*1.02);font-weight:600;
+  padding:.28rem .42rem;border-radius:2px;align-self:flex-end;max-width:92%;line-height:1.25}
+.mk-ans{display:flex;flex-direction:column;gap:.2rem;background:#1a1e21;border-radius:2px;padding:.34rem .42rem}
+.mk-l{font-size:calc(var(--micro)*.98);color:var(--silver);display:flex;align-items:center;gap:.3rem;line-height:1.3}
+.mk-l i{width:4px;height:4px;border-radius:50%;background:var(--orange);flex:none}
+.mk-src{display:flex;justify-content:space-between;align-items:center;gap:.4rem;
+  font-size:calc(var(--micro)*.98);color:var(--silver);padding:.16rem .3rem;background:#1a1e21;border-radius:1px}
+.mk-src b{color:var(--orange);font-weight:700}
+.mk-src.todo{border:1px dashed var(--border-2);background:transparent}
+.mk-src.todo b{color:var(--steel)}
+.mk-wave{display:flex;align-items:center;gap:2px;height:26px;margin-bottom:.16rem}
+.mk-wave i{flex:1;background:var(--orange);opacity:.5;border-radius:1px}
+.mk-wave i:nth-child(odd){height:60%}
+.mk-wave i:nth-child(even){height:95%}
+.mk-wave i:nth-child(3n){height:38%;opacity:.32}
+.mk-tr{display:flex;align-items:center;gap:.34rem}
+.mk-t{font-size:calc(var(--micro)*.9);color:var(--orange);flex:none}
+.mk-x{flex:1;height:5px;background:var(--border-2);border-radius:1px}
+.mk-x.corta{flex:.62}
+.mk-foot{margin-top:auto;font-family:"JetBrains Mono";font-size:calc(var(--micro)*.9);color:var(--steel);letter-spacing:.06em}
+.mk-mod{display:flex;flex-direction:column;gap:.14rem}
+.mk-mod span{font-size:calc(var(--micro)*.98);color:var(--silver)}
+.mk-bar{height:5px;background:#1f2427;border-radius:1px;overflow:hidden}
+.mk-bar i{display:block;height:100%;background:var(--orange)}
 .hint{position:fixed;right:clamp(.5rem,1.4vw,1.2rem);bottom:clamp(.5rem,1.4vh,1rem);font-family:"JetBrains Mono";font-size:var(--micro);color:var(--border-2);letter-spacing:.08em;z-index:40;pointer-events:none}
 </style>
 
@@ -999,37 +1036,94 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 <!-- ============ · HACIA DÓNDE VAMOS · INTELIGENCIA ARTIFICIAL ============ -->
 <section class="slide" data-tab-es="Hacia dónde vamos · Inteligencia artificial" data-tab-en="Where we're going · AI">
   <div class="eyebrow rv">
-    <span data-es="Lo que todavía no existe en ningún lado" data-en="What does not exist anywhere yet">Lo que todavía no existe en ningún lado</span>
-    <span class="mock" data-es="Tres frentes nuevos" data-en="Three brand-new fronts">Tres frentes nuevos</span>
+    <span data-es="Cómo se va a ver cuando esté" data-en="How it will look once it is there">Cómo se va a ver cuando esté</span>
+    <span class="mock" data-es="Bocetos de lo que vamos a construir" data-en="Mockups of what we are going to build">Bocetos de lo que vamos a construir</span>
   </div>
   <h2 class="display rv" data-es="Inteligencia artificial" data-en="Artificial intelligence">Inteligencia artificial</h2>
   <div class="grow rv d2">
-    <div class="f3grid">
-        <div class="f3 nuevo">
-          <div class="f3-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2M12 19v2"/></svg><span class="f3-nada" data-es="Nada construido todavía" data-en="Nothing built yet">Nada construido todavía</span></div>
-          <div class="f3-bd">
-            <h3 data-es="Grabación de las reuniones" data-en="Meeting recording">Grabación de las reuniones</h3>
-            <p data-es="Todo lo que se habla en las reuniones de Speed queda grabado, transcripto y guardado." data-en="Everything said in Speed meetings gets recorded, transcribed and kept.">Todo lo que se habla en las reuniones de Speed queda grabado, transcripto y guardado.</p>
+    <div class="f3grid c4">
+        <div class="f3">
+          <div class="f3-shot mock">
+            <div class="mk">
+              <div class="mk-h"><span class="mk-logo">SPEED<i>/</i>UTV</span><span class="mk-tag">AI</span></div>
+              <div class="mk-b">
+                <div class="mk-ask">¿Qué cobertura tiene el VIN ····4417?</div>
+                <div class="mk-ans">
+                  <span class="mk-l"><i></i>Garantía de fábrica · vigente</span>
+                  <span class="mk-l"><i></i>Último servicio · 162 h de motor</span>
+                  <span class="mk-l"><i></i>Dos reclamos abiertos</span>
+                </div>
+              </div>
+            </div>
+            <span class="f3-cap" data-es="Boceto" data-en="Mockup">Boceto</span>
           </div>
-        </div>
-        <div class="f3 nuevo">
-          <div class="f3-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5A3 3 0 0 0 6 7.5a2.6 2.6 0 0 0-1.6 4.6A2.8 2.8 0 0 0 6 17a3 3 0 0 0 3 3V4.5z"/><path d="M15 4.5a3 3 0 0 1 3 3 2.6 2.6 0 0 1 1.6 4.6A2.8 2.8 0 0 1 18 17a3 3 0 0 1-3 3V4.5z"/><path d="M12 4.5v15.5"/></svg><span class="f3-nada" data-es="Nada construido todavía" data-en="Nothing built yet">Nada construido todavía</span></div>
-          <div class="f3-bd">
-            <h3 data-es="Un cerebro de IA para Speed" data-en="An AI brain for Speed">Un cerebro de IA para Speed</h3>
-            <p data-es="Toda la información de Speed consolidada en un solo lugar, para que la IA tenga contexto real." data-en="All of Speed’s knowledge consolidated in one place, so the AI has real context.">Toda la información de Speed consolidada en un solo lugar, para que la IA tenga contexto real.</p>
-          </div>
-        </div>
-        <div class="f3 nuevo">
-          <div class="f3-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M18 3l.9 2.6L21.5 6.5l-2.6.9L18 10l-.9-2.6L14.5 6.5l2.6-.9z"/></svg><span class="f3-nada" data-es="Nada construido todavía" data-en="Nothing built yet">Nada construido todavía</span></div>
           <div class="f3-bd">
             <h3 data-es="IA para todo el personal" data-en="AI for the whole team">IA para todo el personal</h3>
-            <p data-es="Herramientas de IA para tu gente, con la capacitación para que las usen de verdad." data-en="AI tools for your people, with the training to actually use them.">Herramientas de IA para tu gente, con la capacitación para que las usen de verdad.</p>
+            <p data-es="Cada persona le pregunta al sistema en su idioma y le contesta con los datos de Speed." data-en="Anyone asks the system in plain language and gets an answer with Speed’s own data.">Cada persona le pregunta al sistema en su idioma y le contesta con los datos de Speed.</p>
+          </div>
+        </div>
+        <div class="f3">
+          <div class="f3-shot mock">
+            <div class="mk">
+              <div class="mk-h"><span class="mk-logo">SPEED<i>/</i>BRAIN</span><span class="mk-tag">Índice</span></div>
+              <div class="mk-b">
+                <div class="mk-src"><span>Clientes</span><b class="mono">4.252</b></div>
+                <div class="mk-src"><span>Facturas</span><b class="mono">10.914</b></div>
+                <div class="mk-src"><span>Garantías</span><b class="mono">1.034</b></div>
+                <div class="mk-src"><span>Órdenes del taller</span><b class="mono">18</b></div>
+                <div class="mk-src todo"><span>Reuniones y documentos</span><b class="mono">+</b></div>
+              </div>
+            </div>
+            <span class="f3-cap" data-es="Boceto" data-en="Mockup">Boceto</span>
+          </div>
+          <div class="f3-bd">
+            <h3 data-es="Un cerebro de IA para Speed" data-en="An AI brain for Speed">Un cerebro de IA para Speed</h3>
+            <p data-es="Clientes, facturas, garantías, órdenes y reuniones, todo indexado en un solo lugar." data-en="Customers, invoices, warranties, orders and meetings, all indexed in one place.">Clientes, facturas, garantías, órdenes y reuniones, todo indexado en un solo lugar.</p>
+          </div>
+        </div>
+        <div class="f3">
+          <div class="f3-shot mock">
+            <div class="mk">
+              <div class="mk-h"><span class="mk-logo">REUNIÓN</span><span class="mk-tag rec">● Grabando</span></div>
+              <div class="mk-b">
+                <div class="mk-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="mk-tr"><span class="mk-t mono">00:14</span><span class="mk-x"></span></div>
+                <div class="mk-tr"><span class="mk-t mono">01:02</span><span class="mk-x corta"></span></div>
+                <div class="mk-tr"><span class="mk-t mono">02:37</span><span class="mk-x"></span></div>
+                <div class="mk-foot">Transcripto y traducido</div>
+              </div>
+            </div>
+            <span class="f3-cap" data-es="Boceto" data-en="Mockup">Boceto</span>
+          </div>
+          <div class="f3-bd">
+            <h3 data-es="Grabación de las reuniones" data-en="Meeting recording">Grabación de las reuniones</h3>
+            <p data-es="Cada reunión queda grabada, transcripta y traducida, y entra al cerebro." data-en="Every meeting recorded, transcribed and translated, and it feeds the brain.">Cada reunión queda grabada, transcripta y traducida, y entra al cerebro.</p>
+          </div>
+        </div>
+        <div class="f3">
+          <div class="f3-shot mock">
+            <div class="mk">
+              <div class="mk-h"><span class="mk-logo">CAPACITACIÓN</span><span class="mk-tag">Equipo</span></div>
+              <div class="mk-b">
+                <div class="mk-mod"><span>Mostrador</span><div class="mk-bar"><i style="width:100%"></i></div></div>
+                <div class="mk-mod"><span>Taller</span><div class="mk-bar"><i style="width:72%"></i></div></div>
+                <div class="mk-mod"><span>Contabilidad</span><div class="mk-bar"><i style="width:45%"></i></div></div>
+                <div class="mk-mod"><span>Concesionarios</span><div class="mk-bar"><i style="width:18%"></i></div></div>
+              </div>
+            </div>
+            <span class="f3-cap" data-es="Boceto" data-en="Mockup">Boceto</span>
+          </div>
+          <div class="f3-bd">
+            <h3 data-es="Capacitación general en IA" data-en="General AI training">Capacitación general en IA</h3>
+            <p data-es="Formación para todo el personal, área por área, hasta que cada uno la use de verdad." data-en="Training for the whole team, area by area, until each one actually uses it.">Formación para todo el personal, área por área, hasta que cada uno la use de verdad.</p>
           </div>
         </div>
     </div>
   </div>
-  <div class="foot rv d7" data-es="Los tres frentes nuevos de punta a punta. Acá no hay nada construido todavía." data-en="The three brand-new fronts. Nothing here is built yet.">Los tres frentes nuevos de punta a punta. Acá no hay nada construido todavía.</div>
+  <div class="foot rv d7" data-es="Cuatro frentes que arrancan en noviembre y quedan andando antes de fin de año." data-en="Four fronts that start in November and are running before year end.">Cuatro frentes que arrancan en noviembre y quedan andando antes de fin de año.</div>
 </section>
+
+
 
 
 
