@@ -738,6 +738,10 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 .mk-mod span{font-size:calc(var(--micro)*.98);color:var(--silver)}
 .mk-bar{height:5px;background:#1f2427;border-radius:1px;overflow:hidden}
 .mk-bar i{display:block;height:100%;background:var(--orange)}
+
+/* los dos hitos de las proximas dos semanas se distinguen */
+.rp.pronto .rp-n{background:var(--orange);color:var(--black);border-color:var(--orange)}
+.rp.pronto .rp-bd{border-left-width:3px;background:#17110a}
 .hint{position:fixed;right:clamp(.5rem,1.4vw,1.2rem);bottom:clamp(.5rem,1.4vh,1rem);font-family:"JetBrains Mono";font-size:var(--micro);color:var(--border-2);letter-spacing:.08em;z-index:40;pointer-events:none}
 </style>
 
@@ -1178,70 +1182,80 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 
 <!-- ============ · ROADMAP ============ -->
 <section class="slide" data-tab-es="El roadmap, mes a mes" data-tab-en="The roadmap, month by month">
-  <div class="eyebrow rv" data-es="Los nueve frentes, con fecha" data-en="The nine fronts, dated">Los nueve frentes, con fecha</div>
+  <div class="eyebrow rv" data-es="De acá a fin de año, con fecha" data-en="From here to year end, dated">De acá a fin de año, con fecha</div>
   <h2 class="display rv" data-es="Qué se despliega, y cuándo" data-en="What ships, and when">Qué se despliega, y cuándo</h2>
   <div class="grow rv d2">
     <div class="ruta">
-        <div class="rp">
+        <div class="rp pronto">
           <span class="rp-n mono">01</span>
           <div class="rp-bd">
-            <span class="rp-fecha" data-es="19 de septiembre" data-en="September 19">19 de septiembre</span>
-            <h3 data-es="Cobro · la venta entra al sistema" data-en="Payments · sales move in">Cobro · la venta entra al sistema</h3>
-            <ul><li data-es="Cobro con tarjeta adentro del Hub" data-en="Card payments inside the Hub">Cobro con tarjeta adentro del Hub</li><li data-es="Cada venta con su vendedor y su comisión" data-en="Every sale with its seller and commission">Cada venta con su vendedor y su comisión</li><li data-es="Listo antes de Sand Sports" data-en="Ready before Sand Sports">Listo antes de Sand Sports</li></ul>
+            <span class="rp-fecha" data-es="Lunes 31 de agosto" data-en="Monday, August 31">Lunes 31 de agosto</span>
+            <h3 data-es="Demo del taller" data-en="Shop floor demo">Demo del taller</h3>
+            <ul><li data-es="La primera versión, para verla juntos" data-en="The first version, to look at it together">La primera versión, para verla juntos</li><li data-es="Sin tocar todavía la operación" data-en="Without touching the operation yet">Sin tocar todavía la operación</li></ul>
           </div>
         </div>
-        <div class="rp">
+        <div class="rp pronto">
           <span class="rp-n mono">02</span>
           <div class="rp-bd">
-            <span class="rp-fecha" data-es="Fin de septiembre" data-en="End of September">Fin de septiembre</span>
-            <h3 data-es="Taller · la orden de trabajo cobra" data-en="Shop floor · the work order charges">Taller · la orden de trabajo cobra</h3>
-            <ul><li data-es="Órdenes de trabajo facturables" data-en="Billable work orders">Órdenes de trabajo facturables</li><li data-es="Agenda y auto-reserva del cliente" data-en="Scheduling and customer self-booking">Agenda y auto-reserva del cliente</li><li data-es="Cobro al egreso del vehículo" data-en="Payment when the vehicle leaves">Cobro al egreso del vehículo</li></ul>
+            <span class="rp-fecha" data-es="Lunes 7 de septiembre" data-en="Monday, September 7">Lunes 7 de septiembre</span>
+            <h3 data-es="El taller entra a probar" data-en="The shop starts testing">El taller entra a probar</h3>
+            <ul><li data-es="Primeras pruebas con tu gente adentro" data-en="First tests with your people inside">Primeras pruebas con tu gente adentro</li><li data-es="Lo que salga se corrige sobre la marcha" data-en="Whatever comes up gets fixed as we go">Lo que salga se corrige sobre la marcha</li></ul>
           </div>
         </div>
         <div class="rp">
           <span class="rp-n mono">03</span>
           <div class="rp-bd">
-            <span class="rp-fecha" data-es="Octubre" data-en="October">Octubre</span>
-            <h3 data-es="Servicio · el checklist en iPad" data-en="Service · the iPad checklist">Servicio · el checklist en iPad</h3>
-            <ul><li data-es="Checklist paso a paso, del ingreso a la entrega" data-en="Step-by-step checklist, drop-off to delivery">Checklist paso a paso, del ingreso a la entrega</li><li data-es="Cualquier técnico lo puede seguir" data-en="Any technician can follow it">Cualquier técnico lo puede seguir</li><li data-es="Seriales de motor, transmisión y culata" data-en="Engine, transmission and head serials">Seriales de motor, transmisión y culata</li></ul>
+            <span class="rp-fecha" data-es="25 de septiembre" data-en="September 25">25 de septiembre</span>
+            <h3 data-es="El cobro: la venta entra al sistema" data-en="Payments: sales move in">El cobro: la venta entra al sistema</h3>
+            <ul><li data-es="Cobro con tarjeta adentro del Hub" data-en="Card payments inside the Hub">Cobro con tarjeta adentro del Hub</li><li data-es="Cada venta con su vendedor y su comisión" data-en="Every sale with its seller and commission">Cada venta con su vendedor y su comisión</li></ul>
           </div>
         </div>
         <div class="rp">
           <span class="rp-n mono">04</span>
           <div class="rp-bd">
-            <span class="rp-fecha" data-es="Segunda semana de octubre" data-en="Second week of October">Segunda semana de octubre</span>
-            <h3 data-es="Portal del cliente" data-en="Customer portal">Portal del cliente</h3>
-            <ul><li data-es="Garage, cobertura y reclamos" data-en="Garage, coverage and claims">Garage, cobertura y reclamos</li><li data-es="Turnos desde el teléfono" data-en="Book service from the phone">Turnos desde el teléfono</li><li data-es="Catálogo con checkout" data-en="Catalog with checkout">Catálogo con checkout</li></ul>
+            <span class="rp-fecha" data-es="Fin de septiembre" data-en="End of September">Fin de septiembre</span>
+            <h3 data-es="Servicio y taller, desplegados" data-en="Service and shop floor, deployed">Servicio y taller, desplegados</h3>
+            <ul><li data-es="Órdenes de trabajo facturables" data-en="Billable work orders">Órdenes de trabajo facturables</li><li data-es="Checklist en iPad, del ingreso a la entrega" data-en="iPad checklist, from drop-off to delivery">Checklist en iPad, del ingreso a la entrega</li><li data-es="Agenda, auto-reserva y cobro al egreso" data-en="Scheduling, self-booking and payment on pickup">Agenda, auto-reserva y cobro al egreso</li></ul>
           </div>
         </div>
         <div class="rp">
           <span class="rp-n mono">05</span>
           <div class="rp-bd">
-            <span class="rp-fecha" data-es="Noviembre" data-en="November">Noviembre</span>
-            <h3 data-es="Commerce y catálogo parametrizable" data-en="Commerce and configurable catalog">Commerce y catálogo parametrizable</h3>
-            <ul><li data-es="Una tienda que modificás desde adentro" data-en="A store you change from the inside">Una tienda que modificás desde adentro</li><li data-es="El cliente arma su vehículo: modelo, color y accesorios" data-en="The customer builds their vehicle: model, color, accessories">El cliente arma su vehículo: modelo, color y accesorios</li><li data-es="Portal de concesionarios y garantía de fábrica" data-en="Dealer portal and factory warranty">Portal de concesionarios y garantía de fábrica</li></ul>
+            <span class="rp-fecha" data-es="Segunda semana de octubre" data-en="Second week of October">Segunda semana de octubre</span>
+            <h3 data-es="Portal del cliente y ecommerce" data-en="Customer portal and e-commerce">Portal del cliente y ecommerce</h3>
+            <ul><li data-es="Garage, cobertura, reclamos y turnos" data-en="Garage, coverage, claims and bookings">Garage, cobertura, reclamos y turnos</li><li data-es="Una tienda que modificás desde adentro" data-en="A store you change from the inside">Una tienda que modificás desde adentro</li><li data-es="El cliente arma su vehículo: modelo, color y accesorios" data-en="The customer builds their vehicle: model, color, accessories">El cliente arma su vehículo: modelo, color y accesorios</li></ul>
           </div>
         </div>
         <div class="rp">
           <span class="rp-n mono">06</span>
           <div class="rp-bd">
-            <span class="rp-fecha" data-es="Noviembre y diciembre" data-en="November and December">Noviembre y diciembre</span>
-            <h3 data-es="El cerebro de IA de Speed" data-en="Speed’s AI brain">El cerebro de IA de Speed</h3>
-            <ul><li data-es="Grabación y transcripción de cada reunión" data-en="Recording and transcription of every meeting">Grabación y transcripción de cada reunión</li><li data-es="Toda la información de Speed en un solo lugar" data-en="All of Speed’s knowledge in one place">Toda la información de Speed en un solo lugar</li><li data-es="IA para todo el personal, con capacitación" data-en="AI for the whole team, with training">IA para todo el personal, con capacitación</li></ul>
+            <span class="rp-fecha" data-es="Cuarta semana de octubre" data-en="Fourth week of October">Cuarta semana de octubre</span>
+            <h3 data-es="Transcripción de todas las reuniones" data-en="Every meeting transcribed">Transcripción de todas las reuniones</h3>
+            <ul><li data-es="Absolutamente todas, grabadas y transcriptas" data-en="Every single one, recorded and transcribed">Absolutamente todas, grabadas y transcriptas</li><li data-es="Antes de que termine octubre" data-en="Before October is out">Antes de que termine octubre</li></ul>
           </div>
         </div>
         <div class="rp">
           <span class="rp-n mono">07</span>
           <div class="rp-bd">
-            <span class="rp-fecha" data-es="Diciembre" data-en="December">Diciembre</span>
-            <h3 data-es="Cerramos el año" data-en="We close the year">Cerramos el año</h3>
-            <ul><li data-es="Automatización de la postventa" data-en="After-sales automation">Automatización de la postventa</li><li data-es="Reportes por sede y por vendedor" data-en="Reports by location and by seller">Reportes por sede y por vendedor</li><li data-es="El ecosistema completo, andando" data-en="The full ecosystem, running">El ecosistema completo, andando</li></ul>
+            <span class="rp-fecha" data-es="Segunda semana de noviembre" data-en="Second week of November">Segunda semana de noviembre</span>
+            <h3 data-es="El cerebro de IA de Speed" data-en="Speed’s AI brain">El cerebro de IA de Speed</h3>
+            <ul><li data-es="Toda la información de Speed en un solo lugar" data-en="All of Speed’s knowledge in one place">Toda la información de Speed en un solo lugar</li><li data-es="Con el contexto real de la empresa adentro" data-en="With the company’s real context inside">Con el contexto real de la empresa adentro</li></ul>
+          </div>
+        </div>
+        <div class="rp">
+          <span class="rp-n mono">08</span>
+          <div class="rp-bd">
+            <span class="rp-fecha" data-es="Fin de noviembre" data-en="End of November">Fin de noviembre</span>
+            <h3 data-es="Capacitación general en IA" data-en="General AI training">Capacitación general en IA</h3>
+            <ul><li data-es="Formación para todo el personal, área por área" data-en="Training for the whole team, area by area">Formación para todo el personal, área por área</li><li data-es="Hasta que cada uno la use de verdad" data-en="Until each one actually uses it">Hasta que cada uno la use de verdad</li></ul>
           </div>
         </div>
     </div>
   </div>
-  <div class="foot rv d7" data-es="Cada hito se muestra funcionando en pantalla, con tus datos. No se informa por mail." data-en="Every milestone is shown working on screen, with your data. Not reported by email.">Cada hito se muestra funcionando en pantalla, con tus datos. No se informa por mail.</div>
+  <div class="foot rv d7" data-es="Los dos primeros son la semana que viene y la siguiente. Cada hito se muestra funcionando en pantalla, con tus datos." data-en="The first two are next week and the week after. Every milestone is shown working on screen, with your data.">Los dos primeros son la semana que viene y la siguiente. Cada hito se muestra funcionando en pantalla, con tus datos.</div>
 </section>
+
+
 
 
 
