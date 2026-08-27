@@ -760,16 +760,10 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 .cm-ver{font-family:"JetBrains Mono";font-size:var(--micro);color:var(--steel);letter-spacing:.04em;
   margin-top:.3rem;padding-top:.3rem;border-top:1px solid var(--border);line-height:1.3}
 
-/* === EL DELTA, AL LADO DEL PRECIO === */
-.delta{display:flex;align-items:baseline;gap:clamp(.5rem,1.2vw,1.1rem);
-  margin-top:clamp(.2rem,.8vh,.6rem);padding-left:clamp(.6rem,1.2vw,1.1rem);
-  border-left:3px solid var(--orange);max-width:min(100%,900px)}
-.dl-n{font-size:clamp(1.4rem,3.4vw,2.9rem);color:var(--orange);line-height:1;letter-spacing:-.02em;flex:none}
-.dl-t{display:flex;flex-direction:column;gap:.12rem;min-width:0}
-.dl-1{font-family:"Saira Condensed";font-style:italic;font-weight:700;text-transform:uppercase;
-  font-size:var(--t-md);color:var(--white);line-height:1.06}
-.dl-2{font-size:var(--small);color:var(--silver);font-weight:300;line-height:1.4;max-width:64ch}
-@media(max-width:700px){.delta{flex-direction:column;align-items:flex-start;gap:.2rem}}
+/* === LA NOTA DEBAJO DEL PRECIO === */
+.pnota{margin-top:clamp(.35rem,1vh,.8rem);padding-left:clamp(.6rem,1.2vw,1.1rem);
+  border-left:3px solid var(--orange);font-size:var(--small);color:var(--silver);
+  font-weight:300;line-height:1.4;max-width:min(100%,64ch)}
 
 /* === EL ROADMAP SCROLLEA ADENTRO === */
 .grow.crece{flex:1 1 auto;min-height:0}
@@ -1335,20 +1329,14 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 
 <!-- ============ · LA INVERSIÓN ============ -->
 <section class="slide" data-tab-es="La inversión" data-tab-en="The investment" data-sec-es="El pedido" data-sec-en="The ask">
-  <div class="eyebrow rv" data-es="Lo que hace falta para sostener este calendario" data-en="What it takes to hold this calendar">Lo que hace falta para sostener este calendario</div>
+  <div class="eyebrow rv" data-es="Para lograr nuestros objetivos" data-en="To reach our goals">Para lograr nuestros objetivos</div>
   <h2 class="display rv" data-es="La inversión" data-en="The investment">La inversión</h2>
   <div class="grow rv d2">
     <div class="price rv d3">
       <span class="amt">$7.500</span>
       <span class="per" data-es="/ mes" data-en="/ month">/ mes</span>
     </div>
-    <div class="delta rv d4">
-      <span class="dl-n display">+4.700</span>
-      <div class="dl-t">
-        <span class="dl-1" data-es="por mes sobre lo que pagás hoy" data-en="a month more than you pay today">por mes sobre lo que pagás hoy</span>
-        <span class="dl-2" data-es="Tres meses. Después se revisa. Los 7.500 reemplazan tu abono de 2.800: no se suman." data-en="Three months. Then we review. The 7,500 replaces your 2,800 retainer: it is not on top.">Tres meses. Después se revisa. Los 7.500 reemplazan tu abono de 2.800: no se suman.</span>
-      </div>
-    </div>
+    <div class="pnota rv d4" data-es="Reemplaza tu abono actual. No se suma." data-en="It replaces your current retainer. It is not on top.">Reemplaza tu abono actual. No se suma.</div>
     <div class="terms c2 rv d4">
       <div><div class="k" data-es="Forma de pago para arrancar" data-en="Payment to get started">Forma de pago para arrancar</div><div class="v display" data-es="3 meses por adelantado" data-en="3 months up front">3 meses por adelantado</div></div>
       <div><div class="k" data-es="Total del anticipo" data-en="Advance total">Total del anticipo</div><div class="v display orange">USD 22.500</div></div>
