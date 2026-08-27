@@ -605,7 +605,7 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 .fw-bd p{font-size:var(--t-xs);color:var(--silver);font-weight:300;line-height:1.36;margin:0}
 
 /* === ROADMAP COMO CAMINO === */
-.ruta{display:flex;flex-direction:column;gap:clamp(.3rem,.8vh,.6rem);min-height:0;position:relative}
+.ruta{display:flex;flex-direction:column;gap:clamp(.3rem,.8vh,.6rem);min-height:0;position:relative;overflow-y:auto;overflow-x:hidden;padding-right:.5rem;scrollbar-width:thin;scrollbar-color:var(--orange-dim) transparent}
 .rp{display:grid;grid-template-columns:auto 1fr;gap:clamp(.55rem,1.3vw,1.1rem);align-items:start;position:relative}
 .rp-n{flex:none;width:clamp(26px,3.4vh,38px);height:clamp(26px,3.4vh,38px);border-radius:50%;
   border:1px solid var(--orange);color:var(--orange);display:flex;align-items:center;justify-content:center;
@@ -770,6 +770,21 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
   font-size:var(--t-md);color:var(--white);line-height:1.06}
 .dl-2{font-size:var(--small);color:var(--silver);font-weight:300;line-height:1.4;max-width:64ch}
 @media(max-width:700px){.delta{flex-direction:column;align-items:flex-start;gap:.2rem}}
+
+/* === EL ROADMAP SCROLLEA ADENTRO === */
+.grow.crece{flex:1 1 auto;min-height:0}
+.ruta::-webkit-scrollbar{width:6px}
+.ruta::-webkit-scrollbar-track{background:var(--carbon);border-radius:3px}
+.ruta::-webkit-scrollbar-thumb{background:var(--orange-dim);border-radius:3px}
+.ruta::-webkit-scrollbar-thumb:hover{background:var(--orange)}
+/* la sombra de abajo avisa que hay mas, y se apaga al llegar al final */
+.ruta-wrap{position:relative;min-height:0;display:flex;flex-direction:column;flex:1 1 auto}
+.ruta-wrap::after{content:"";position:absolute;left:0;right:.5rem;bottom:0;height:clamp(22px,4vh,44px);
+  background:linear-gradient(transparent,var(--black));pointer-events:none;opacity:1;transition:opacity .2s}
+.ruta-wrap.fin::after{opacity:0}
+.ruta-mas{position:absolute;right:1.1rem;bottom:.3rem;font-family:"JetBrains Mono";font-size:var(--micro);
+  letter-spacing:.1em;text-transform:uppercase;color:var(--orange);pointer-events:none;transition:opacity .2s}
+.ruta-wrap.fin .ruta-mas{opacity:0}
 .hint{position:fixed;right:clamp(.5rem,1.4vw,1.2rem);bottom:clamp(.5rem,1.4vh,1rem);font-family:"JetBrains Mono";font-size:var(--micro);color:var(--border-2);letter-spacing:.08em;z-index:40;pointer-events:none}
 </style>
 
@@ -1219,7 +1234,8 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 <section class="slide" data-tab-es="El roadmap, mes a mes" data-tab-en="The roadmap, month by month">
   <div class="eyebrow rv" data-es="De acá a fin de año, con fecha" data-en="From here to year end, dated">De acá a fin de año, con fecha</div>
   <h2 class="display rv" data-es="Qué se despliega, y cuándo" data-en="What ships, and when">Qué se despliega, y cuándo</h2>
-  <div class="grow rv d2">
+  <div class="grow crece rv d2">
+    <div class="ruta-wrap">
     <div class="ruta">
         <div class="rp pronto">
           <span class="rp-n mono">01</span>
@@ -1293,6 +1309,8 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
             <ul><li data-es="Formación para todo el personal, área por área" data-en="Training for the whole team, area by area">Formación para todo el personal, área por área</li><li data-es="Hasta que cada uno la use de verdad" data-en="Until each one actually uses it">Hasta que cada uno la use de verdad</li></ul>
           </div>
         </div>
+    </div>
+      <span class="ruta-mas" data-es="Seguí bajando" data-en="Keep scrolling">Seguí bajando</span>
     </div>
   </div>
   <div class="foot rv d7" data-es="Los dos primeros son la semana que viene y la siguiente. Cada hito se muestra funcionando en pantalla, con tus datos." data-en="The first two are next week and the week after. Every milestone is shown working on screen, with your data.">Los dos primeros son la semana que viene y la siguiente. Cada hito se muestra funcionando en pantalla, con tus datos.</div>
@@ -1568,4 +1586,20 @@ slides[0].dataset.on = '1';
 progEl.style.width = (1 / slides.length * 100) + '%';
 countUp(slides[0]);
 setTimeout(() => { const h = document.getElementById('hint'); if (h) h.style.opacity = '0'; h.style.transition = 'opacity .6s'; }, 4200);
+
+  // el roadmap scrollea: la sombra y el aviso se apagan al llegar abajo
+  (function(){
+    var r = document.querySelector('.ruta');
+    if (!r) return;
+    var w = r.closest('.ruta-wrap');
+    function marcar(){
+      var hayMas = r.scrollHeight - r.clientHeight > 4;
+      var alFinal = r.scrollTop + r.clientHeight >= r.scrollHeight - 4;
+      w.classList.toggle('fin', !hayMas || alFinal);
+    }
+    r.addEventListener('scroll', marcar, {passive:true});
+    window.addEventListener('resize', marcar);
+    marcar();
+    new MutationObserver(marcar).observe(document.getElementById('stage'), {attributes:true, subtree:true, attributeFilter:['data-on']});
+  })();
 </script>
