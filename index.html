@@ -668,6 +668,16 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 .fw.nuevo .fw-ic svg{width:clamp(20px,3.2vh,34px);height:clamp(20px,3.2vh,34px);flex:none}
 .fw-nada{font-family:"JetBrains Mono";font-size:var(--micro);letter-spacing:.09em;text-transform:uppercase;color:var(--steel)}
 .fw.nuevo .fw-bd{border-left-color:var(--orange);border-left-style:dashed}
+
+/* con nueve tarjetas y dos columnas la caja se pasa: se compacta */
+@media(max-width:900px){
+  .cugrid{gap:clamp(.3rem,.8vw,.6rem)}
+  .cu{padding:clamp(.45rem,1.2vh,.8rem) clamp(.5rem,1vw,.85rem);gap:.18rem}
+  .cu-ic{width:clamp(16px,2.4vh,22px);height:clamp(16px,2.4vh,22px);margin-bottom:.14rem}
+  .cu h3{font-size:var(--t-sm)}
+  .cu p{font-size:var(--t-xs);line-height:1.3}
+  .cu-a{font-size:var(--micro);margin-top:.24rem;padding-top:.24rem}
+}
 .hint{position:fixed;right:clamp(.5rem,1.4vw,1.2rem);bottom:clamp(.5rem,1.4vh,1rem);font-family:"JetBrains Mono";font-size:var(--micro);color:var(--border-2);letter-spacing:.08em;z-index:40;pointer-events:none}
 </style>
 
@@ -868,6 +878,18 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
           <h3 data-es="Sin depender de nadie afuera" data-en="No outside dependency">Sin depender de nadie afuera</h3>
           <p data-es="Dejaste de depender de una plataforma externa sobre la que no tenías ningún control para poder seguir innovando." data-en="You stopped depending on an outside platform you had no control over, so you can keep innovating.">Dejaste de depender de una plataforma externa sobre la que no tenías ningún control para poder seguir innovando.</p>
           <span class="cu-a mono">NetSuite apagado desde el 11/07</span>
+        </div>
+        <div class="cu">
+          <span class="cu-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 7a4 4 0 1 0-3.5 4L9 12.5V15H6.5L4 17.5 6.5 20 9 17.5V15h2.5l1.5-1.5A4 4 0 0 0 14 7z"/></svg></span>
+          <h3 data-es="El taller ya lo está usando" data-en="The shop is already using it">El taller ya lo está usando</h3>
+          <p data-es="El taller empezó a cargar sus órdenes de reparación, y todas son de los últimos días." data-en="The shop started logging its own repair orders, and all of them are from the last few days.">El taller empezó a cargar sus órdenes de reparación, y todas son de los últimos días.</p>
+          <span class="cu-a mono">18 órdenes · 33 líneas · en 6 días</span>
+        </div>
+        <div class="cu">
+          <span class="cu-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M7.5 14h3M7.5 17.5h6"/></svg></span>
+          <h3 data-es="Construido en 76 días" data-en="Built in 76 days">Construido en 76 días</h3>
+          <p data-es="Todo lo que estás usando hoy se construyó desde cero en menos de tres meses." data-en="Everything you are using today was built from zero in under three months.">Todo lo que estás usando hoy se construyó desde cero en menos de tres meses.</p>
+          <span class="cu-a mono">76 días corridos · código en 64 de ellos</span>
         </div>
     </div>
   </div>
