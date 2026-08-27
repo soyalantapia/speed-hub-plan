@@ -706,37 +706,38 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
 .f3grid.c4{grid-template-columns:repeat(4,1fr)}
 @media(max-width:1100px){.f3grid.c4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.f3grid.c4{grid-template-columns:1fr}}
-.f3-shot.mock{background:#0d0f11;display:flex;padding:clamp(.4rem,1vh,.7rem)}
-.mk{flex:1;min-width:0;display:flex;flex-direction:column;background:#141719;border:1px solid var(--border-2);border-radius:2px;overflow:hidden}
-.mk-h{display:flex;justify-content:space-between;align-items:center;gap:.4rem;padding:.34rem .5rem;background:#0f1113;border-bottom:1px solid var(--border)}
-.mk-logo{font-family:"Saira Condensed";font-style:italic;font-weight:800;font-size:var(--micro);letter-spacing:.04em;color:var(--white);text-transform:uppercase}
+.f3-shot.mock{background:#0d0f11;display:flex;padding:3%;padding-bottom:11.5%;container-type:inline-size}
+.mk{flex:1;min-width:0;display:flex;flex-direction:column;background:#141719;border:1px solid var(--border-2);border-radius:2px;overflow:hidden;
+  font-size:clamp(6px,4.2cqw,13px)}
+.mk-h{display:flex;justify-content:space-between;align-items:center;gap:.4em;padding:.4em .66em;background:#0f1113;border-bottom:1px solid var(--border)}
+.mk-logo{font-family:"Saira Condensed";font-style:italic;font-weight:800;font-size:1.02em;letter-spacing:.04em;color:var(--white);text-transform:uppercase;line-height:1.1}
 .mk-logo i{color:var(--orange);font-style:normal}
-.mk-tag{font-family:"JetBrains Mono";font-size:calc(var(--micro)*.92);color:var(--orange);letter-spacing:.06em}
+.mk-tag{font-family:"JetBrains Mono";font-size:.93em;color:var(--orange);letter-spacing:.06em;line-height:1.1}
 .mk-tag.rec{color:#e0503a}
-.mk-b{flex:1;min-height:0;display:flex;flex-direction:column;gap:.26rem;padding:.44rem .5rem;overflow:hidden}
-.mk-ask{background:var(--orange);color:var(--black);font-size:calc(var(--micro)*1.02);font-weight:600;
-  padding:.28rem .42rem;border-radius:2px;align-self:flex-end;max-width:92%;line-height:1.25}
-.mk-ans{display:flex;flex-direction:column;gap:.2rem;background:#1a1e21;border-radius:2px;padding:.34rem .42rem}
-.mk-l{font-size:calc(var(--micro)*.98);color:var(--silver);display:flex;align-items:center;gap:.3rem;line-height:1.3}
-.mk-l i{width:4px;height:4px;border-radius:50%;background:var(--orange);flex:none}
-.mk-src{display:flex;justify-content:space-between;align-items:center;gap:.4rem;
-  font-size:calc(var(--micro)*.98);color:var(--silver);padding:.16rem .3rem;background:#1a1e21;border-radius:1px}
+.mk-b{flex:1;min-height:0;display:flex;flex-direction:column;gap:.14em;padding:.34em .6em;overflow:hidden}
+.mk-ask{background:var(--orange);color:var(--black);font-size:1.02em;font-weight:600;
+  padding:.26em .54em;border-radius:2px;align-self:flex-end;max-width:100%;line-height:1.16}
+.mk-ans{display:flex;flex-direction:column;gap:.1em;background:#1a1e21;border-radius:2px;padding:.24em .5em}
+.mk-l{font-size:.94em;color:var(--silver);display:flex;align-items:center;gap:.3em;line-height:1.14}
+.mk-l i{width:.4em;height:.4em;border-radius:50%;background:var(--orange);flex:none}
+.mk-src{display:flex;justify-content:space-between;align-items:center;gap:.4em;
+  font-size:.94em;line-height:1.18;color:var(--silver);padding:.08em .44em;background:#1a1e21;border-radius:1px}
 .mk-src b{color:var(--orange);font-weight:700}
 .mk-src.todo{border:1px dashed var(--border-2);background:transparent}
 .mk-src.todo b{color:var(--steel)}
-.mk-wave{display:flex;align-items:center;gap:2px;height:26px;margin-bottom:.16rem}
+.mk-wave{display:flex;align-items:center;gap:.16em;height:2.3em;margin-bottom:.17em}
 .mk-wave i{flex:1;background:var(--orange);opacity:.5;border-radius:1px}
 .mk-wave i:nth-child(odd){height:60%}
 .mk-wave i:nth-child(even){height:95%}
 .mk-wave i:nth-child(3n){height:38%;opacity:.32}
-.mk-tr{display:flex;align-items:center;gap:.34rem}
-.mk-t{font-size:calc(var(--micro)*.9);color:var(--orange);flex:none}
-.mk-x{flex:1;height:5px;background:var(--border-2);border-radius:1px}
+.mk-tr{display:flex;align-items:center;gap:.57em}
+.mk-t{font-size:.92em;color:var(--orange);flex:none;line-height:1.2}
+.mk-x{flex:1;height:.53em;background:var(--border-2);border-radius:1px}
 .mk-x.corta{flex:.62}
-.mk-foot{margin-top:auto;font-family:"JetBrains Mono";font-size:calc(var(--micro)*.9);color:var(--steel);letter-spacing:.06em}
-.mk-mod{display:flex;flex-direction:column;gap:.14rem}
-.mk-mod span{font-size:calc(var(--micro)*.98);color:var(--silver)}
-.mk-bar{height:5px;background:#1f2427;border-radius:1px;overflow:hidden}
+.mk-foot{margin-top:auto;font-family:"JetBrains Mono";font-size:.92em;color:var(--steel);letter-spacing:.06em;line-height:1.2}
+.mk-mod{display:flex;flex-direction:column;gap:.14em}
+.mk-mod span{font-size:.94em;color:var(--silver);line-height:1.2}
+.mk-bar{height:.53em;background:#1f2427;border-radius:1px;overflow:hidden}
 .mk-bar i{display:block;height:100%;background:var(--orange)}
 
 /* los dos hitos de las proximas dos semanas se distinguen */
@@ -1090,11 +1091,11 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
             <div class="mk">
               <div class="mk-h"><span class="mk-logo">SPEED<i>/</i>UTV</span><span class="mk-tag">AI</span></div>
               <div class="mk-b">
-                <div class="mk-ask">¿Qué cobertura tiene el VIN ····4417?</div>
+                <div class="mk-ask" data-es="¿Qué cobertura tiene el VIN ····4417?" data-en="What's covered on VIN ····4417?">¿Qué cobertura tiene el VIN ····4417?</div>
                 <div class="mk-ans">
-                  <span class="mk-l"><i></i>Garantía de fábrica · vigente</span>
-                  <span class="mk-l"><i></i>Último servicio · 162 h de motor</span>
-                  <span class="mk-l"><i></i>Dos reclamos abiertos</span>
+                  <span class="mk-l" data-es="<i></i>Garantía de fábrica · vigente" data-en="<i></i>Factory warranty · active"><i></i>Garantía de fábrica · vigente</span>
+                  <span class="mk-l" data-es="<i></i>Último servicio · 162 h de motor" data-en="<i></i>Last service · 162 engine hours"><i></i>Último servicio · 162 h de motor</span>
+                  <span class="mk-l" data-es="<i></i>Dos reclamos abiertos" data-en="<i></i>Two open claims"><i></i>Dos reclamos abiertos</span>
                 </div>
               </div>
             </div>
@@ -1108,13 +1109,13 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
         <div class="f3">
           <div class="f3-shot mock">
             <div class="mk">
-              <div class="mk-h"><span class="mk-logo">SPEED<i>/</i>BRAIN</span><span class="mk-tag">Índice</span></div>
+              <div class="mk-h"><span class="mk-logo">SPEED<i>/</i>BRAIN</span><span class="mk-tag" data-es="Índice" data-en="Index">Índice</span></div>
               <div class="mk-b">
-                <div class="mk-src"><span>Clientes</span><b class="mono">4.252</b></div>
-                <div class="mk-src"><span>Facturas</span><b class="mono">10.914</b></div>
-                <div class="mk-src"><span>Garantías</span><b class="mono">1.034</b></div>
-                <div class="mk-src"><span>Órdenes del taller</span><b class="mono">18</b></div>
-                <div class="mk-src todo"><span>Reuniones y documentos</span><b class="mono">+</b></div>
+                <div class="mk-src"><span data-es="Clientes" data-en="Customers">Clientes</span><b class="mono" data-es="4.252" data-en="4,252">4.252</b></div>
+                <div class="mk-src"><span data-es="Facturas" data-en="Invoices">Facturas</span><b class="mono" data-es="10.914" data-en="10,914">10.914</b></div>
+                <div class="mk-src"><span data-es="Garantías" data-en="Warranties">Garantías</span><b class="mono" data-es="1.034" data-en="1,034">1.034</b></div>
+                <div class="mk-src"><span data-es="Órdenes del taller" data-en="Work orders">Órdenes del taller</span><b class="mono">18</b></div>
+                <div class="mk-src todo"><span data-es="Reuniones y documentos" data-en="Meetings and documents">Reuniones y documentos</span><b class="mono">+</b></div>
               </div>
             </div>
             <span class="f3-cap" data-es="Boceto" data-en="Mockup">Boceto</span>
@@ -1127,13 +1128,13 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
         <div class="f3">
           <div class="f3-shot mock">
             <div class="mk">
-              <div class="mk-h"><span class="mk-logo">REUNIÓN</span><span class="mk-tag rec">● Grabando</span></div>
+              <div class="mk-h"><span class="mk-logo" data-es="REUNIÓN" data-en="MEETING">REUNIÓN</span><span class="mk-tag rec" data-es="● Grabando" data-en="● Recording">● Grabando</span></div>
               <div class="mk-b">
                 <div class="mk-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
                 <div class="mk-tr"><span class="mk-t mono">00:14</span><span class="mk-x"></span></div>
                 <div class="mk-tr"><span class="mk-t mono">01:02</span><span class="mk-x corta"></span></div>
                 <div class="mk-tr"><span class="mk-t mono">02:37</span><span class="mk-x"></span></div>
-                <div class="mk-foot">Transcripto y traducido</div>
+                <div class="mk-foot" data-es="Transcripto y traducido" data-en="Transcribed and translated">Transcripto y traducido</div>
               </div>
             </div>
             <span class="f3-cap" data-es="Boceto" data-en="Mockup">Boceto</span>
@@ -1146,12 +1147,12 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
         <div class="f3">
           <div class="f3-shot mock">
             <div class="mk">
-              <div class="mk-h"><span class="mk-logo">CAPACITACIÓN</span><span class="mk-tag">Equipo</span></div>
+              <div class="mk-h"><span class="mk-logo" data-es="CAPACITACIÓN" data-en="TRAINING">CAPACITACIÓN</span><span class="mk-tag" data-es="Equipo" data-en="Team">Equipo</span></div>
               <div class="mk-b">
-                <div class="mk-mod"><span>Mostrador</span><div class="mk-bar"><i style="width:100%"></i></div></div>
-                <div class="mk-mod"><span>Taller</span><div class="mk-bar"><i style="width:72%"></i></div></div>
-                <div class="mk-mod"><span>Contabilidad</span><div class="mk-bar"><i style="width:45%"></i></div></div>
-                <div class="mk-mod"><span>Concesionarios</span><div class="mk-bar"><i style="width:18%"></i></div></div>
+                <div class="mk-mod"><span data-es="Mostrador" data-en="Front counter">Mostrador</span><div class="mk-bar"><i style="width:100%"></i></div></div>
+                <div class="mk-mod"><span data-es="Taller" data-en="Shop">Taller</span><div class="mk-bar"><i style="width:72%"></i></div></div>
+                <div class="mk-mod"><span data-es="Contabilidad" data-en="Accounting">Contabilidad</span><div class="mk-bar"><i style="width:45%"></i></div></div>
+                <div class="mk-mod"><span data-es="Concesionarios" data-en="Dealers">Concesionarios</span><div class="mk-bar"><i style="width:18%"></i></div></div>
               </div>
             </div>
             <span class="f3-cap" data-es="Boceto" data-en="Mockup">Boceto</span>
@@ -1333,13 +1334,13 @@ h2{font-size:var(--d2);margin:0 0 clamp(.35rem,1vh,.8rem)}
   <h2 class="display rv" data-es="La inversión" data-en="The investment">La inversión</h2>
   <div class="grow rv d2">
     <div class="price rv d3">
-      <span class="amt">$7.500</span>
+      <span class="amt" data-es="$7.500" data-en="$7,500">$7.500</span>
       <span class="per" data-es="/ mes" data-en="/ month">/ mes</span>
     </div>
     <div class="pnota rv d4" data-es="Reemplaza tu abono actual. No se suma." data-en="It replaces your current retainer. It is not on top.">Reemplaza tu abono actual. No se suma.</div>
     <div class="terms c2 rv d4">
       <div><div class="k" data-es="Forma de pago para arrancar" data-en="Payment to get started">Forma de pago para arrancar</div><div class="v display" data-es="3 meses por adelantado" data-en="3 months up front">3 meses por adelantado</div></div>
-      <div><div class="k" data-es="Total del anticipo" data-en="Advance total">Total del anticipo</div><div class="v display orange">USD 22.500</div></div>
+      <div><div class="k" data-es="Total del anticipo" data-en="Advance total">Total del anticipo</div><div class="v display orange" data-es="USD 22.500" data-en="USD 22,500">USD 22.500</div></div>
     </div>
     <div class="cal rv d6">
       <div class="cal-m pago"><span class="cal-k mono" data-es="Mes 1" data-en="Month 1">Mes 1</span><span class="cal-v" data-es="Septiembre" data-en="September">Septiembre</span></div>
