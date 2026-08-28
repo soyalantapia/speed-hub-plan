@@ -1569,7 +1569,12 @@ document.addEventListener('touchend', e => {
 }, { passive: true });
 
 /* === ARRANQUE === */
-try { const s = localStorage.getItem('speedhub-lang'); if (s === 'en') setLang('en'); } catch(e){}
+try {
+  /* el idioma se puede fijar por URL (?lang=en) para que el link abra ya traducido */
+  const q = new URLSearchParams(location.search).get('lang');
+  const s = (q === 'en' || q === 'es') ? q : localStorage.getItem('speedhub-lang');
+  if (s === 'en') setLang('en');
+} catch(e){}
 buildTabs();
 slides[0].dataset.on = '1';
 progEl.style.width = (1 / slides.length * 100) + '%';
